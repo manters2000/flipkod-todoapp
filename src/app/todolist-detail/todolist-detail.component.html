@@ -1,0 +1,11 @@
+<div *ngIf="todo">
+
+  <h2>Details</h2>
+  <div><span>id: </span>{{todo.id}}</div>
+  <div>
+    <label>Title:
+      <input [(ngModel)]="todo.title" placeholder="Title">
+    </label>
+  </div>
+
+</div>
