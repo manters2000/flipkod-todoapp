@@ -11,7 +11,6 @@ import {TodoDataService} from './todo-data.service';
 export class AppComponent {
 
   newTodo: Todo = new Todo();
-  selectedList: Todo = new Todo();
 
   constructor(private todoDataService: TodoDataService) {
   }
@@ -31,10 +30,6 @@ export class AppComponent {
 
   get todos() {
     return this.todoDataService.getAllTodos();
-  }
-
-  onSelect(todo: Todo): void {
-    this.selectedList = todo;
   }
 
 }

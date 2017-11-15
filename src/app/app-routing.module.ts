@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { TodolistDetailComponent }  from './todolist-detail/todolist-detail.component';
+import { TodoDetailComponent }  from './todo-detail/todo-detail.component';
 
 const routes: Routes = [
-  { path: 'detail/:id', component: TodolistDetailComponent }
+  { path: 'detail/:id', component: TodoDetailComponent }
 ];
 
 @NgModule({
